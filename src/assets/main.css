@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.table_body{
+  width: 60%;
+  height: 60%;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+
+}
+.table_body>div{
+  border-bottom: 5px solid #000;
+  border-right: 5px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.table_body>div:nth-child(4n){
+  border-right: none;
+}
+.table_body>div:nth-last-child(-n+4){
+border-bottom: none;
+}
